@@ -1,6 +1,6 @@
 ﻿namespace Projeto
 {
-    partial class Login
+    partial class Form3
     {
         /// <summary>
         /// Required designer variable.
@@ -33,6 +33,7 @@
             this.txtUsuario = new MetroFramework.Controls.MetroTextBox();
             this.txtSenhaLogin = new MetroFramework.Controls.MetroTextBox();
             this.btnEntrar = new MetroFramework.Controls.MetroButton();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // labelUsuario
@@ -40,9 +41,10 @@
             this.labelUsuario.AutoSize = true;
             this.labelUsuario.Location = new System.Drawing.Point(187, 131);
             this.labelUsuario.Name = "labelUsuario";
-            this.labelUsuario.Size = new System.Drawing.Size(56, 19);
+            this.labelUsuario.Size = new System.Drawing.Size(50, 19);
             this.labelUsuario.TabIndex = 0;
-            this.labelUsuario.Text = "Usuário:";
+            this.labelUsuario.Text = "E-mail:";
+            this.labelUsuario.Click += new System.EventHandler(this.labelUsuario_Click);
             // 
             // labelSenhaLogin
             // 
@@ -59,7 +61,7 @@
             // 
             // 
             this.txtUsuario.CustomButton.Image = null;
-            this.txtUsuario.CustomButton.Location = new System.Drawing.Point(165, 1);
+            this.txtUsuario.CustomButton.Location = new System.Drawing.Point(295, 1);
             this.txtUsuario.CustomButton.Name = "";
             this.txtUsuario.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtUsuario.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -89,7 +91,7 @@
             // 
             // 
             this.txtSenhaLogin.CustomButton.Image = null;
-            this.txtSenhaLogin.CustomButton.Location = new System.Drawing.Point(165, 1);
+            this.txtSenhaLogin.CustomButton.Location = new System.Drawing.Point(295, 1);
             this.txtSenhaLogin.CustomButton.Name = "";
             this.txtSenhaLogin.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtSenhaLogin.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -115,24 +117,36 @@
             // 
             // btnEntrar
             // 
-            this.btnEntrar.Location = new System.Drawing.Point(467, 228);
+            this.btnEntrar.Location = new System.Drawing.Point(280, 240);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(130, 23);
             this.btnEntrar.TabIndex = 4;
-            this.btnEntrar.Text = "Entrar";
+            this.btnEntrar.Text = "Administração";
             this.btnEntrar.UseSelectable = true;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
-            // Login
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(467, 240);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(130, 23);
+            this.metroButton1.TabIndex = 5;
+            this.metroButton1.Text = "Funcionário";
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
+            // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.txtSenhaLogin);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.labelSenhaLogin);
             this.Controls.Add(this.labelUsuario);
-            this.Name = "Login";
+            this.Name = "Form3";
             this.Text = "Login";
             this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
             this.Load += new System.EventHandler(this.Form3_Load);
@@ -148,5 +162,6 @@
         private MetroFramework.Controls.MetroTextBox txtUsuario;
         private MetroFramework.Controls.MetroTextBox txtSenhaLogin;
         private MetroFramework.Controls.MetroButton btnEntrar;
+        private MetroFramework.Controls.MetroButton metroButton1;
     }
 }

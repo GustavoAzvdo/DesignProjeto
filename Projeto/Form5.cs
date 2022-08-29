@@ -10,23 +10,20 @@ using System.Windows.Forms;
 
 namespace Projeto
 {
-    public partial class Form2 : MetroFramework.Forms.MetroForm
+    public partial class Form5 : MetroFramework.Forms.MetroForm
     {
-        public Form2()
+        public Form5()
         {
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void Form5_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void btnConfirmarCadastro_Click(object sender, EventArgs e)
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-            Form1 form = new Form1();
-            form.Show();
 
         }
     }

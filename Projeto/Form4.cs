@@ -10,28 +10,27 @@ using System.Windows.Forms;
 
 namespace Projeto
 {
-    public partial class Form1 : MetroFramework.Forms.MetroForm
+    public partial class Form4 : MetroFramework.Forms.MetroForm
     {
-        public Form1()
+        public Form4()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form4_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void btnCadastrarse_Click(object sender, EventArgs e)
+        private void btnProdutos_Click(object sender, EventArgs e)
         {
-            Form2 form = new Form2();
+            Form6 form = new Form6();
             form.Show();
-
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnEstoque_Click(object sender, EventArgs e)
         {
-            Form3 form = new Form3();
+            Form7 form = new Form7();
             form.Show();
         }
     }

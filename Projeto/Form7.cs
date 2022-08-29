@@ -10,23 +10,15 @@ using System.Windows.Forms;
 
 namespace Projeto
 {
-    public partial class Form2 : MetroFramework.Forms.MetroForm
+    public partial class Form7 : MetroFramework.Forms.MetroForm
     {
-        public Form2()
+        public Form7()
         {
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void Form7_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnConfirmarCadastro_Click(object sender, EventArgs e)
-        {
-
-            Form1 form = new Form1();
-            form.Show();
 
         }
     }

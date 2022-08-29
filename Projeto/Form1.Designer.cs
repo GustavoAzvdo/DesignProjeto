@@ -1,6 +1,6 @@
 ﻿namespace Projeto
 {
-    partial class Gerenciamento
+    partial class Form1
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -40,6 +40,7 @@
             this.btnCadastrarse.TabIndex = 0;
             this.btnCadastrarse.Text = "Cadastrar-se";
             this.btnCadastrarse.UseSelectable = true;
+            this.btnCadastrarse.Click += new System.EventHandler(this.btnCadastrarse_Click);
             // 
             // btnLogin
             // 
@@ -49,15 +50,16 @@
             this.btnLogin.TabIndex = 1;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseSelectable = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // Gerenciamento
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnCadastrarse);
-            this.Name = "Gerenciamento";
+            this.Name = "Form1";
             this.Text = "Gerenciamento";
             this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
             this.Load += new System.EventHandler(this.Form1_Load);
