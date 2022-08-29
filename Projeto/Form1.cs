@@ -34,5 +34,11 @@ namespace Projeto
             Form3 form = new Form3();
             form.Show();
         }
+
+        private void btnCadastrarFuncao_Click(object sender, EventArgs e)
+        {
+            Form8 form = new Form8();
+            form.Show();
+        }
     }
 }

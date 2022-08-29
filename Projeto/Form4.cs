@@ -33,5 +33,11 @@ namespace Projeto
             Form7 form = new Form7();
             form.Show();
         }
+
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+            Form9 form = new Form9();
+            form.Show();
+        }
     }
 }

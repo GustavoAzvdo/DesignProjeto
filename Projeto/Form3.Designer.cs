@@ -34,6 +34,7 @@
             this.txtSenhaLogin = new MetroFramework.Controls.MetroTextBox();
             this.btnEntrar = new MetroFramework.Controls.MetroButton();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.btnVoltarLogin = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // labelUsuario
@@ -117,7 +118,7 @@
             // 
             // btnEntrar
             // 
-            this.btnEntrar.Location = new System.Drawing.Point(280, 240);
+            this.btnEntrar.Location = new System.Drawing.Point(467, 253);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(130, 23);
             this.btnEntrar.TabIndex = 4;
@@ -127,7 +128,7 @@
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(467, 240);
+            this.metroButton1.Location = new System.Drawing.Point(467, 224);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(130, 23);
             this.metroButton1.TabIndex = 5;
@@ -135,11 +136,22 @@
             this.metroButton1.UseSelectable = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
+            // btnVoltarLogin
+            // 
+            this.btnVoltarLogin.Location = new System.Drawing.Point(23, 404);
+            this.btnVoltarLogin.Name = "btnVoltarLogin";
+            this.btnVoltarLogin.Size = new System.Drawing.Size(75, 23);
+            this.btnVoltarLogin.TabIndex = 6;
+            this.btnVoltarLogin.Text = "Voltar";
+            this.btnVoltarLogin.UseSelectable = true;
+            this.btnVoltarLogin.Click += new System.EventHandler(this.btnVoltarLogin_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnVoltarLogin);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.txtSenhaLogin);
@@ -163,5 +175,6 @@
         private MetroFramework.Controls.MetroTextBox txtSenhaLogin;
         private MetroFramework.Controls.MetroButton btnEntrar;
         private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton btnVoltarLogin;
     }
 }

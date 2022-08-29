@@ -42,6 +42,12 @@ namespace Projeto
             Form5 form = new Form5();
             form.Show();
         }
+
+        private void btnVoltarLogin_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            form.Show();
+        }
     }
     }
 
